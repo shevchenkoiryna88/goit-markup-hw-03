@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
     <!-- сброс стилей -->
+    <link rel="stylesheet" href="modern-normalize.css">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -25,12 +26,12 @@
 
 <!-- Navigation -->
 
-        <nav>
+        <nav class="nav-display">
             <!-- Logo -->
 
             <a href="./index.html" class="logo link">Web<span class="page-logo-span">Studio</span></a>
             
-            <ul class="list">
+            <ul class="list nav-list-displey-flex">
                 <li><a href="./index.html" class="page-nav-link link">Studio</a></li>
                 <li><a href="./portfolio.html" class="page-nav-link link">Portfolio</a></li>
                 <li><a href="" class="page-nav-link link">Contacts</a></li>
@@ -40,7 +41,7 @@
 <!-- Mail and Telphone -->
 
         <address class="adress">
-                <ul class="list">
+                <ul class="list adress-list-display-flex">
                     <li><a href="mailto:info@devstudio.com" class="adress-link link" >info@devstudio.com</a></li>
                     <li><a href="tel:+110001111111" class="adress-link link" >+11 (000) 111-11-11</a></li>
                 </ul>
@@ -52,84 +53,104 @@
 <main>
 
 <!-- Section 1 Hero -->
+
+
 <section class="hero">
+    <div class="container">
 
     <h1 class="hero-titel">Effective Solutions for Your Business</h1>
     <button class="hero-button" type="button">Order Service</button>
+</div>
 
 </section>
 
+
 <!-- Section 2 -->
-<section class="section2">
+<section class="section-two">
+<div class="container">
 
     <h2 hidden>Section2</h2>
-    <ul class="list">
-        <li>
+
+    <ul class="list section-two-list-display">
+        <li class="section-two-item-display">
             <h3 class="section-two-titel">Strategy</h3>
             <p class="section-two-text">Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
         </li>
-        <li>
+        <li class="section-two-item-display">
             <h3 class="section-two-titel" >Punctuality</h3>
             <p class="section-two-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
         </li>
-        <li>
+        <li class="section-two-item-display">
             <h3 class="section-two-titel">Diligence</h3>
             <p class="section-two-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
         </li>
-        <li>
+        <li class="section-two-item-display">
             <h3 class="section-two-titel">Technologies</h3>
             <p class="section-two-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
         </li>
     </ul>
+    </div>
 </section>
 
 <!-- Section 3 What are we doing -->
-<section>
+<section class="section-tree">
+    <div class="container">
 
     <h2 class="section-three-titel">What are we doing</h2>
 
-    <ul class="list">
-        <li>
+    <ul class="list section-tree-list-display">
+        <li class="section-tree-item-display">
             <img src="./images/doing1.jpg" alt="Laptop" width="360" height="300">
         </li>
 
-        <li>
+        <li class="section-tree-item-display">
             <img src="./images/doing2.jpg" alt="Phone" width="360" height="300">
         </li>
 
-        <li>
+        <li class="section-tree-item-display">
             <img src="./images/doing3.jpg" alt="Sync" width="360" height="300">                 
         </li>
     </ul>
+    </div>
 </section>
 
 <!-- Section 4 Our Team -->
 <section class="section-four" >
+    <div class="container">
     
     <h2 class="section-four-titel-h-two">Our Team</h2>
 
-    <ul class="list">
+    <ul class="list section-four-list-display">
         <li class="section-four-li">
-            <img src="./images/mark.jpg" alt="Mark" width="264" height="260">
+            <div class="section-four-div">
+            <img src="./images/Mark.jpg" alt="Mark" width="264" height="260">
             <h3 class="section-four-titel-h-three">Mark Guerrero</h3>
             <p class="section-four-text">Product Designer</p>
+            </div>
         </li>
         <li class="section-four-li">
-            <img src="./images/tom.jpg" alt="Tom" width="264" height="260">
+            <div class="section-four-div">
+            <img src="./images/Tom.jpg" alt="Tom" width="264" height="260">
             <h3 class="section-four-titel-h-three">Tom Ford</h3>
             <p class="section-four-text">Frontend Developer</p>
+            </div>
         </li>
         <li class="section-four-li">
-            <img src="./images/camila.jpg" alt="Camila" width="264" height="260">
+            <div class="section-four-div">
+            <img src="./images/Camila.jpg" alt="Camila" width="264" height="260">
             <h3 class="section-four-titel-h-three">Camila Garcia</h3>
             <p class="section-four-text">Marketing</p>
+            </div>
         </li>
         <li class="section-four-li">
-            <img src="./images/daniel.jpg" alt="Daniel" width="264" height="260">
+            <div class="section-four-div">
+            <img src="./images/Daniel.jpg" alt="Daniel" width="264" height="260">
             <h3 class="section-four-titel-h-three">Daniel Wilson</h3>
             <p class="section-four-text">UI Designer</p>
+            </div>
         </li>
     </ul>
+    </div>
 </section>
 
 </main>

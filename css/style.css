@@ -22,6 +22,52 @@ body {
     --white-background-color: #ffffff;
     --modal-background-color: #fcfcfc;}
 
+    /* глобальне скидання стилів за селектором тегу */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+ul,
+ol {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    /* color: inherit; */
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-content: center;
+}
 
 /* Header Style */
 
@@ -31,14 +77,26 @@ font-size: 18px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--primary-barand-color);}
+color: var(--primary-barand-color);
+margin-right: 76px}
 
 .link {text-decoration: none;} 
 .list {list-style: none;}
 
 .page-logo-span{color: var(--hero-background-color);}
 
-.page-nav-link {font-weight: 500;
+.nav-display{
+    display: flex;
+    align-items: center; }
+
+.nav-list-displey-flex{
+    display: flex;
+    gap: 40px;
+}
+
+.page-nav-link {
+    padding: 24px 0;
+    font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -47,9 +105,18 @@ color: var(--hero-background-color);}
 .page-nav-link:hover{color: var(--pressed-state-color);}
 .page-nav-link:focus{color: var(--pressed-state-color);}
 
-.adress{font-style: normal;}
+.adress{
+    font-style: normal;
+    
+    }
 
-.adress-link{font-size: 16px;
+.adress-list-display-flex{
+    display: flex;
+    gap: 40px;}
+
+.adress-link{
+    
+    font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--body-text-color);}
@@ -65,9 +132,16 @@ color: var(--body-text-color);}
 line-height: 1.07;
 text-align: center;
 letter-spacing: 0.02em;
-color: #ffffff;}
+color: #ffffff;
+padding: 188px 0;
+max-width: 496px;}
 
 .hero-button{
+    border-radius: 4px;
+    height: 56px;
+    border: none;
+    min-width: 169px;
+    display: block;
     background-color: #4D5AE5;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -82,7 +156,23 @@ color: #ffffff;}
 .hero-button:focus {background-color: var(--pressed-state-color);}
 
 /* Section 2 */
+.section-two{
+    padding: 120px 0;
+
+}
+.visually-hidden
+
+.section-two-list-display{
+    display: flex;
+    gap: 24px;}
+
+.section-two-item-display{
+    width: calc((100% - 72px) / 4);
+
+}
+
 .section-two-titel{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -99,8 +189,20 @@ color: #ffffff;}
 
 /* < !-- Section 3 What are we doing --> */
 
+.section-tree{
+    padding-bottom: 120px;
+}
 
+.section-tree-list-display{
+    display: flex;
+    gap: 24px;}
+
+.section-tree-item-display{
+    width: calc((100% - 48px) / 3);
+
+}
 .section-three-titel{
+    margin-bottom: 72px;
     color: var(--navy-blue-color);
     font-size: 36px;
     line-height: 1.11;
@@ -110,11 +212,28 @@ color: #ffffff;}
 
 /* Section 4 Our Team */
 
+.section-four{
+    padding: 120px 0;
+
+}
 .section-four{background-color: var(--light-color);}
 
-.section-four-li{background-color: var(--white-background-color);}
+.section-four-li{
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white-background-color);}
+
+.section-four-list-display{
+    display: flex;
+    gap: 24px;}
+
+.section-four-div{
+    padding: 32px 16px;
+
+}
 
 .section-four-titel-h-two{
+    margin-bottom: 72px;
     color: var(--hero-background-color);
     font-size: 36px;
     line-height: 1.11;
@@ -123,6 +242,8 @@ color: #ffffff;}
     text-transform: capitalize;}
 
 .section-four-titel-h-three{
+    text-align: center;
+    margin-bottom: 8px;
     font-weight: 500;
     color: var(--hero-background-color);
     font-size: 20px;
@@ -130,6 +251,8 @@ color: #ffffff;}
     letter-spacing: 0.02em;}
 
 .section-four-text{
+    text-align: center;
+    
     color: var(--body-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -197,3 +320,14 @@ color: #ffffff;}
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: var(--body-text-color);}
+
+
+        /* для центрування і обмеження контенту по ширині */
+    .container{
+        width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px;
+
+
+
+    }
