@@ -320,7 +320,13 @@ margin-bottom: 16px;}
 
     .portfolio-list-display{
         display: flex;
-        gap: 40px;
+        gap: 40px;    }
+
+    .portfolio-list-displey-flex{
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        margin-bottom: 72px;
     }
 
     
