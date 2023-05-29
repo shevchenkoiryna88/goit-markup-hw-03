@@ -71,6 +71,9 @@ a {
 
 /* Header Style */
 
+.header-display-flex{
+    display: flex;}
+
 .logo{font-family: "Raleway",sans-serif;
 font-weight: 800;
 font-size: 18px;
@@ -130,7 +133,10 @@ color: var(--body-text-color);}
 
 /* Section 1 Hero */
 
-.hero{background-color:var(--navy-blue-color)}
+.hero{
+    background-color:var(--navy-blue-color);
+    padding: 188px 0;}
+
 .hero-titel{font-size: 56px;
 line-height: 1.07;
 text-align: center;
@@ -163,7 +169,9 @@ max-width: 496px;}
     padding: 120px 0;
 
 }
-.visually-hidden
+
+/* what is this */
+.visually-hidden 
 
 .section-two-list-display{
     display: flex;
@@ -310,11 +318,10 @@ margin-bottom: 16px;}
         align-items: center;
     }
 
-    .portfolio-list-displey-flex{
+    .portfolio-list-display{
         display: flex;
-        justify-content: center;
-        gap: 24px;
-        margin-bottom: 72px;}
+        gap: 40px;
+    }
 
     
     .porfolio-button{
@@ -343,6 +350,7 @@ margin-bottom: 16px;}
     .porfolio-button:focus{color: var(--white-background-color);}
     
     .portfolio-list-wrap{
+        display: flex;
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 48px;}
