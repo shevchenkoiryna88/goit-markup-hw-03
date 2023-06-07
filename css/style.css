@@ -185,9 +185,10 @@ max-width: 496px;}
 /* what is this */
 .visually-hidden 
 
-.section-two-list-display{
+.sectwodispllist{
     display: flex;
-    gap: 24px;}
+gap: 24px;}
+
 
 .section-two-item-display{
     width: calc((100% - 72px) / 4);
